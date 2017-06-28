@@ -8,14 +8,9 @@ zxing应该说是一个比较老得且非常成熟的二维码框架了！里面
 二维码的识别用法：
 
 /*在需要调起扫码相机的地方启动*/
-
 startActivityForResult(new Intent(getApplicationContext(), CaptureActivity.class), 0);
 
-
-
-
 /*然后在activity界面中重写回调方法进行接收结果值*/
-
 @Override
 public void onActivityResult(int requestCode, int resultCode, Intent data) {
       if (resultCode == Activity.RESULT_OK) {
