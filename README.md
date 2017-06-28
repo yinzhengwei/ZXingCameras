@@ -12,6 +12,7 @@ zxing应该说是一个比较老得且非常成熟的二维码框架了！里面
 startActivityForResult(new Intent(getApplicationContext(), CaptureActivity.class), 0);
 
 #然后在activity界面中重写回调方法进行接收结果值
+
 @Override
 public void onActivityResult(int requestCode, int resultCode, Intent data) {
       if (resultCode == Activity.RESULT_OK) {
