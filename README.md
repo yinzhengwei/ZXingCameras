@@ -11,12 +11,12 @@ startActivityForResult(new Intent(getApplicationContext(), CaptureActivity.class
 
 //然后在activity界面中重写回调方法进行接收结果值
 @Override
-    public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (resultCode == Activity.RESULT_OK) {
-            Bundle bundle = data.getExtras();
-            Toast.makeText(getApplicationContext(), bundle.getString("result"), Toast.LENGTH_SHORT).show();
-        }
-    } 
+public void onActivityResult(int requestCode, int resultCode, Intent data) {
+      if (resultCode == Activity.RESULT_OK) {
+          Bundle bundle = data.getExtras();
+          Toast.makeText(getApplicationContext(), bundle.getString("result"), Toast.LENGTH_SHORT).show();
+      }
+} 
     
 
 二维码的生成用法：
